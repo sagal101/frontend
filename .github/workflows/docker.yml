@@ -10,7 +10,7 @@ jobs:
   build-and-push-image:
     runs-on: ubuntu-latest
     uses: sagal101/gitactions/.github/workflows/docker.yml@main
-    # Replace 'docker.yml' with the correct path to your Docker workflow file
+    # Replace 'docker.yml' with the correct path to your Docker workflow files
 
   run-node:
     runs-on: ubuntu-latest

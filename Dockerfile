@@ -1,4 +1,3 @@
-
 # Use an official Node.js runtime as the base image
 FROM node:latest
 
@@ -18,4 +17,4 @@ COPY . .
 EXPOSE 3000
 
 # Command to run the application
-CMD ["npm", "start"]
+CMD ["node", "-e", "console.log('hello world sagal')"]

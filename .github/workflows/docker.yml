@@ -15,7 +15,8 @@ jobs:
 
       # Call the 'build-and-push-image' job from sagal101/gitactions repository
       - name: Call Docker build and push workflow from sagal101/gitactions
-        uses: sagal101/gitactions/.github/workflows/nodejs.yml@main
+        uses: sagal101/gitactions/.github/workflows/docker.yml@main
+        # Replace 'docker.yml' with the correct path to your Docker workflow file
 
   run-node:
     runs-on: ubuntu-latest
@@ -25,4 +26,5 @@ jobs:
 
       # Call the 'run-node' job from sagal101/gitactions repository
       - name: Call Docker run-node workflow from sagal101/gitactions
-        uses: sagal101/gitactions/.github/workflows/docker.yml@main
+        uses: sagal101/gitactions/.github/workflows/nodejs.yml@main
+        # Replace 'nodejs.yml' with the correct path to your Node.js workflow file

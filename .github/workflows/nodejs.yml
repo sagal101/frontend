@@ -8,5 +8,5 @@ on:
 
 jobs:
   build-and-push-image:
-    uses: sagal101/gitactions/.github/workflows/nodejs.yml@v2
+    uses: sagal101/gitactions/.github/workflows/nodejs.yml@main
 

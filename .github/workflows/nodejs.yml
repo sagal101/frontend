@@ -1,1 +1,12 @@
+name: Node Image CI
+
+on:
+  push:
+    branches:
+      - main  # Replace with your main branch name
+  workflow_dispatch:  # Allows manual triggering from GitHub UI
+
+jobs:
+  build-and-push-image:
+    uses: sagal101/gitactions/.github/workflows/nodejs.yml@v2
 

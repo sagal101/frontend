@@ -1,12 +1,18 @@
-name: Node Image CI
+name: Docker Image CI
 
 on:
   push:
     branches:
-      - main  # Replace with your main branch name
-  workflow_dispatch:  # Allows manual triggering from GitHub UI
+      - main
+  workflow_dispatch:
 
 jobs:
   build-and-push-image:
-    uses: sagal101/gitactions/.github/workflows/nodejs.yml@main
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
+      # Call the 'build-and-push-image' job from sagal101/gitactions repository
+      - name: Call Docker build and push workflow from sagal101/gitactions
+        uses: sagal101/gitactions/.github/workflows/nodejs.yml@main

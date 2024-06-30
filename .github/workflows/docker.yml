@@ -8,7 +8,7 @@ on:
 
 jobs:
   build-and-push-image:
-    uses: sagal101/gitactions/.github/workflows/nodejs.yml@v2
+    uses: sagal101/gitactions/.github/workflows/nodejs.yml@main
   run-node:
-    uses: sagal101/gitactions/.github/workflows/docker.yml/docker.yml@v2
+    uses: sagal101/gitactions/.github/workflows/docker.yml/docker.yml@main
 

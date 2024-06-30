@@ -1,1 +1,14 @@
+name: Docker Image CI
 
+on:
+  push:
+    branches:
+      - main  # Replace with your main branch name
+  workflow_dispatch:  # Allows manual triggering from GitHub UI
+
+jobs:
+  build-and-push-image:
+    uses: sagal101/.github/workflows/docker.yml@v2
+
+  run-node:
+    uses: sagal101/.github/workflows/nodejs.yml@v2
